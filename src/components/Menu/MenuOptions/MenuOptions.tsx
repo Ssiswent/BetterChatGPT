@@ -19,6 +19,7 @@ const MenuOptions = () => {
           hideMenuOptions ? 'max-h-0' : 'max-h-full'
         } overflow-hidden transition-all`}
       >
+        {googleClientId && <GoogleSync clientId={googleClientId} />}
         <ClearConversation />
         <ImportExportChat />
         <Api />
